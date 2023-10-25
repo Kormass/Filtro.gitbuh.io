@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./fondopga.jpg);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    background-image: url("./fondo.webp");
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+input, select, button{
+    border-radius: 5px;
+    font-size: 15px;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 300px;
+}
+/* Estilos específicos para secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    max-width: 900px;
+    margin-left: 450px;
+    background-color: white;
+    font-size: 20px;
+    color: white;
+    background-image: url(./fondosection.jpg);
+    border: 3px solid #333;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid #333;
+}
+
+label{
+    font-weight: 800;
+}

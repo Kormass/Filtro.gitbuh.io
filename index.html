@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestor de Campcoins</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="campers">
+        <h2><a href="">campers</a></h2>
+        <div>
+            <label for="number">numero identificador</label>
+            <input type="number" id="id" placeholder="ID" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Su nombre" required>
+            <label for="telefono">Telefono</label>
+            <input type="number" id="telefono" placeholder="3166666666">
+            <label for="email"required>Email:</label>
+            <input type="text" id="email" placeholder="example@example.com" required>
+            <label for="grupo">Grupo</label>
+            <input type="text" id="grupo" placeholder="Grupo CAMPUSLAND" required>
+            <label for="campcoins">Campcoins</label>
+            
+            <button onclick="registrarcamper()">Registrar camper</button>
+        </div>
+    </section>
+    <section>
+        CAMPERS REGISTRADOS
+        <div id="listado-campers">
+            <button class="modificar">Modificar</button>
+            <!-- Aquí se mostrará el listado de campers con sus saldos -->
+        </div>
+    </section>
+    <section id="acciones">
+        <h2>acciones</h2>
+        <div>
+            <label for="nombreaccion">Nombre de la accion:</label>
+            <input type="text" id="nombreaccion">
+            <label for="puntosaccion">Puntos de la accion:</label>
+            <input type="number" id="puntosaccion">
+            <button onclick="agregaraccion()">Agregar accion</button>
+    </section>
+    <section>
+        ACCIONES REGISTRADAS
+        <div id="listado-acciones">
+            <!-- Aquí se mostrará el listado de acciones con sus puntos -->
+        </div>
+    </section>
+    <section id="acciones">
+        <h2>acciones</h2>
+        <div>
+            <label for="camperaccion">camper:</label>
+            <select id="camperaccion">
+                <!-- Opciones de campers se generan dinámicamente -->
+            </select>
+            <label for="accionaccion">accion:</label>
+            <select id="accionaccion">
+                <!-- Opciones de acciones se generan dinámicamente -->
+            </select>
+            <label for="puntosCampcoins">Puntos de campcoins:</label>
+            <input type="number" id="puntosCampcoins">
+            <button onclick="agregarPuntos()">Agregar Puntos</button>
+        </div>
+    </section>
+    <section id="reporte">
+        <h2>Reporte de Campcoins</h2>
+        <div id="reporte-campers">
+            <!-- Aquí se mostrará el reporte de saldos de Mega Puntos -->
+        </div>
+    </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
